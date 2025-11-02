@@ -1,0 +1,1 @@
+This repo contains different mini projects in various languages. This is just to practice and improve programming and build a good routine.
