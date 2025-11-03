@@ -1,8 +1,6 @@
-#TODO 
+# TODO
 # Improve user validation
 # Better error messages
-
-
 import time
 import math
 
@@ -47,20 +45,23 @@ def set_timer():
         break
     return total_timer_in_seconds
 
+
 def seconds_to_h_m_s_mod(total_timer_in_seconds):
     hours = total_timer_in_seconds // 3600
     minutes = (total_timer_in_seconds % 3600) // 60
-    seconds = (total_timer_in_seconds % 60)
+    seconds = total_timer_in_seconds % 60
     print(f"{hours:0>2}:{minutes:0>2}:{seconds:0>2}")
+
 
 def seconds_to_h_m_s_subtract(total_timer_in_seconds):
     remaining = total_timer_in_seconds
     hours = remaining // 3600
-    remaining -= (hours*3600)
+    remaining -= hours * 3600
     minutes = remaining // 60
-    remaining -= (minutes * 60)
+    remaining -= minutes * 60
     seconds = remaining
     print(f"{hours:0>2}:{minutes:0>2}:{seconds:0>2}")
+
 
 def start_timer(time_value):
     start_time = time.monotonic()
